@@ -219,9 +219,9 @@ const KeyboardsPage = () => {
 
           {/* 리스트 영역 :: S */}
           <div className='grow-1'>
-            {!items ? (
+            {isLoading ? (
               <LoadingSpinner />
-            ) : items.length === 0 ? (
+            ) : !items || items.length === 0 ? (
               <EmptyList desc={emptyMessage} />
             ) : (
               items.map((item) => (
@@ -238,7 +238,7 @@ const KeyboardsPage = () => {
                 />
               ))
             )}
-            {isMoreFetchLoading ? (
+            {!isLoading && isMoreFetchLoading ? (
               <LoadingSpinner className='w-full my-8' />
             ) : (
               <div ref={targetRef}></div>
