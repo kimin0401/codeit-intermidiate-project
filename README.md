@@ -2,7 +2,7 @@
 다양한 키보드 정보와 리뷰를 공유할 수 있는 커뮤니티형 웹 플랫폼 
 
 ## 배포 사이트 
-[Link]tadak-163.vercel.app
+https://tadak-163.vercel.app
 
 ## 📸 데모
 |CRUD|무한스크롤|
